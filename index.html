@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="{%static 'LandingPage/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{%static 'LandingPage/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet"  href="main.css">
+    <style>
+    body,html {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        font-family: Raleway;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.support{
+  position: absolute;
+  bottom: -154%;
+  right: 140%;
+  width: 24%;
+  padding: 5px;
+}
+.mobile{
+    position: absolute;
+    bottom: -105%;
+    left: 66%;
+    width: 23%;
+    padding: 5px;
+}
+.certificate{
+    position: absolute;
+    bottom: -107%;
+    left: 40%;
+    width: 14%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text-block {
+    font-size: 18px;
+  position: absolute;
+  width: 300px;
+  top: 60px;
+  right: -60px;
+  
+  border-radius: 9px;
+  color: black;
+  
+}
+.text-block1 {
+    font-weight: bold;
+    font-size: 18px;
+  position: absolute;
+  width: 300px;
+  top: 270px;
+  left: 400px;
+  
+  border-radius: 9px;
+  color: black;
+  
+}
+.text-block2 {
+    font-weight: bold;
+    font-size: 18px;
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  left: 270px;
+  
+  border-radius: 9px;
+  color: black;
+  
+}
+    .item{
+        background-color: white;
+        min-height: 250px;
+
+        border-radius: 10px;
+        border:2px solid black;
+    }
+    .label{
+        color: white;
+    }
+    .head{
+        color: black;
+    }
+    .signup-form form{
+
+        width:100%;
+        background-color: #f1f2f6;
+        border-radius: 3px;
+        margin-bottom: 15px;
+
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .signup-form .hint {
+        color: black;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .btn1{
+        width: 90%;
+        color: black;
+        font-size: 18px;
+        border:2px solid #dfe6e9;
+        border-radius:40px;
+        background-color: white;
+    }
+    .head1{
+        color: black;
+    }
+    .inp1{
+        border:none;
+        border-bottom: 2px solid black;
+        width: 275px;outline:none;
+        text-align: center;
+    }
+    .container1{
+
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .slider-area{
+        margin:0;
+    }
+
+    .carousel-control.left, .carousel-control.right{
+        background: transparent;
+    } 
+    .img-area{
+        margin: auto;
+        overflow: hidden;
+        align-items: center;
+    }
+    .img-area img{
+        height: 400px;
+        width: 500px;
+    }
+    .carousel-caption{
+        position: static;
+        padding-bottom: 15px;
+        padding-top: 0;
+    }
+    .carousel-caption h4{
+        font-size: 20px;
+    }
+    #navbar-left a{
+        text-decoration: none;
+        color: #ababab;
+    }
+    #navbar-left a:hover{
+        color: black;
+    }
+    #navbar-left button{
+        color: white;
+    }
+    footer{
+        background: #eeeeee; 
+        color:#757575;
+        font-size: 13px;
+        line-height: 1.2
+    }
+    footer h6{
+        color: #9e9e9e;
+    }
+    footer a{
+        color: black;
+    }
+    footer a:link{
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: #757575;
+    }
+    footer #social i{
+        color: black;
+        font-size: 1.2rem;
+    }
+    footer #social i:hover{
+        color: #3db166;
+    }
+    @media (max-width: 768px) {
+        #navbar-left{
+            display: block;
+        }
+        #first {
+            padding-top: 2px;
+            padding-bottom: 2px;
+            line-height: 12px;
+        }
+        .container-fluid{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .section-a img{
+            padding: 0;
+        }
+        footer{
+            font-size: 7.2px;    
+        }
+    }
+    @media (max-width: 990px){
+        #navbar-left{
+            display: block;
+        }
+        #navbar-left form{
+            display: none;
+        }
+        .section-a{
+            margin-bottom: 32px;
+        }
+        .section-a img{
+            margin: 32px;
+        }
+        .section-a #section-a-learn h2,h3{
+            font-size: 31px;
+        }
+        .section-a #section-a-learn h4{
+            font-size: 15px;
+        }
+        #query{
+            margin-left: 11em;
+        }
+        #query_request{
+            text-align: center !important;
+        } 
+        footer{
+            font-size: 7.2px;    
+        }
+    }
+    @media (max-width: 375px){
+        #query{
+            margin-left: 0 !important; 
+        }
+    }
+    @media all and (max-width: 765px){
+        footer{
+            font-size: 1rem;
+        }
+        #query{
+            margin-left: 1.5em;
+        }
+        #footer-left{
+            padding-left: 3em;
+            text-align: left;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+        #logo{
+            margin-left:10px!important;
+        }
+    }
+
+    @media only screen and (max-width: 1080px){
+        #request{
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+        }
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+@media all and (max-width:30em){
+ button.button3{
+  display:block;
+  margin:0.2em auto;
+ }
+
+    </style>
+</head>
+
+<body>
+ 
+    <img src="logotiny.png" id="logo" style="margin-top: 10px; margin-bottom: 3px;margin-left:8px;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e0e0e0;">
+        <a class="navbar-brand" href="/home">Digital TMHM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampl">
+                    Free Content
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav justify-content-end text-sm-left" id="navbar-left">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                      
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn my-sm-0" type="submit" style="color: black;s"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" style="padding-left: 0;">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/signup" class="btn btn-primary rounded" style="color: white">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<img src="learn.jpg" class="responsive">
+ 
+<button class="button button3">Start Learning</button>
+
+<div class="row">
+    <div class="container">
+<div class="column"><img src="test.jpg" style="width:85%"></div>
+<div class="bottom-right">Live Classes
+<div class="text-block">
+<p>Chat with Instructors and get your doubts cleared with Live Classes</p>
+</div>
+</div>
+
+
+<div class="column"><img src="learn.png" style="width:96%"><div class="text-block1">
+<p>Refer to the notes shared as pdf for complete revision.</p>
+</div>
+</div>
+<div class="bottom-left">Practice Tests
+<div class="text-block2">
+<p>Get access to all our live and recorded classes from your devices</p>
+</div>
+</div>
+
+<div class="column"><img src="revise.png" style="width:85%"></div>
+
+<div class="bottom-top">Explore and Learn</div>
+</div>
+</div>
+
+<div class="access">
+    <p>On TMHM, you have access to:</p>
+    <div class="support"><img src="support.jpg" style="width: 50%"></div>
+    </div>
+  </div>
+
+    <div class="access1">
+
+<p>Our Technical and Academic support and assistance.</p>
+  </div>      
+    <div class="mobile"><img src="mobile.png" style="width: 50%"></div>
+    <div class="access2">
+        <p>Learn anywhere and everywhere through Mobile Learning.</p>
+    </div>
+<div class="certificate"><img src="cer.jpg" style="width: 50%"></div>
+ <div class="access3">
+    <p> Certificates that can be shared on LinkedIn.</p>
+</div>
+</div>
+</br></br></br></br></br></br></br></br></br></br></br>
+<div class="data"><img src="data.jpg" style="width: 100%"></div>
+
+</body>
+
+
+<!-- Footer -->
+<div style="margin-top: 5em;></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+               
+            </div>
+            <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 mt-4" id="request" style="background-size:1400px;padding-top:30px;padding-left:30px">
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div style="margin-bottom: 5em;"></div>               
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left pb-3" style="background: transparent;">
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="footer-left">
+                <h6 class="text-uppercase mb-2 font-weight-bold" style="font-size: 11px;"><img src="logotiny.png" style="width: 30px; height: 30px;"> Digital TMHM</h6>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="footer-left">
+                <p>
+                <a href="#!">About Us</a>
+                </p>
+                <p>
+                <a href="#!">Career</a>
+                </p>
+                <p>
+                <a href="#!">Contact Us</a>
+                </p>
+                <p>
+                <a href="#!">Terms/Services</a>
+                </p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto" id="footer-left">
+                <br>
+                <p>
+                <a href="#!">Learners</a>
+                </p>
+                <p>
+                <a href="/facilitator">Facilitators</a>
+                </p>
+                <p>
+                <a href="#!">Campus</a>
+                </p>
+                <p>
+                <a href="#!">Corporates</a>
+                </p>
+            </div>
+        
+            <hr class="w-100 clearfix d-md-none">
+    
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 social" id="footer-left">
+            <h6 class="text-uppercase font-weight-bold">Our App</h6>
+            <hr class="mb-2 mt-0 d-inline-block mx-auto" style="width: 20px;">
+            <p>
+            <a href="https://www.apple.com/ios/app-store/"><i class="fab fa-apple mr-1" style="font-size: 20px;"></i> IOS Store</a>
+            </p>
+            <p>
+            <a href="https://play.google.com/store"><img class="mr-1" src="play-store.svg" width="20px" height="20px"> Andriod Store</a>
+            </p>
+        </div>
+
+    </div>
+       
+
+        <hr class="mb-4 mt-0 d-inline-block mx-auto text-sm-lef" style="width: 100%; height: 1px; background-color: #3db166;">
+
+        <div class="row d-flex align-items-center">
+
+        <div class="col-md-7 col-lg-8">            
+            <p class="text-center text-md-left text-sm-left">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/">
+                <strong> TMHM Company Pvt.Ltd </strong>
+            </a>
+            </p>
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right text-sm-left" id="social">
+    
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                </li>
+                <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                </li>
+                <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-wordpress-simple"></i>
+                </a>
+                </li>
+                <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                </li>
+                <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        
+
+        </div>
+    </div>
+
+</footer>
+</html>
